@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sự Kiện chuột</title>
+    <link rel="stylesheet" href="th4p6.css">
+</head>
+<body>
+    <form>
+        <img id="myImage" src="bong-da-hinh-c-u-qu-bong-qu-c-u-52504.jpg" 
+        style="position: relative;left: 0;"/>
+        <p>Click button below to move the image to right</p>
+        <input type="button" value="Click Me" onclick="move()"/>
+    </form>
+    <script>
+        var image = document.getElementById("myImage");
+        function move(){
+            image.style.left=parseInt(image.style.left) + 5 + "px";
+        }
+    </script>
+</body>
+</html>
